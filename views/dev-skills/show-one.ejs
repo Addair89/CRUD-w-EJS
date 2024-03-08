@@ -1,0 +1,10 @@
+<%- include('../partials/header') %>
+    <h2><%= skill.skill %></h2>
+    <p><%= skill.description %></p>
+    <form action="/dev-skills/<%= skill.id %>?_method=DELETE" method="POST">
+        <p>Do you think this skill should be deleted</p>
+        <button>DELETE Skill</button>
+    </form>
+    <p>Does this skill need to be edited?</p>
+    <a href="/dev-skills/edit/<%= skill.id %>">Edit</a>
+<%- include('../partials/footer') %>

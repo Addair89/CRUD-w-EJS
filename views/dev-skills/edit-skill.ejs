@@ -1,0 +1,10 @@
+<%- include('../partials/header') %>
+<h2><%= skill.skill %></h2>
+    <form action="/dev-skills/edit/<%= skill.id %>?_method=PUT" method="POST">
+        <label for="">Skill</label>
+        <input name="skill" type="text" value="<%= skill.skill %>">
+        <label for="">Description</label>
+        <textarea style="width: 300px; height: 150px;" rows="10" cols="50"  name="description" autocomplete="off"><%= skill.description %></textarea>
+        <button>Complete Edit</button>
+    </form>
+<%- include('../partials/footer') %>

@@ -1,0 +1,41 @@
+body {
+    padding: 50px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+    color: #00b7ff;
+}
+
+li {
+    list-style: none;
+    padding: 10px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+form > input {
+    border-radius: 5px;
+    padding: 5px;
+    height: 20px;
+    margin-bottom: 10px;
+    background-color: #00b7ff26;
+}
+
+button {
+    padding: 5px;
+    font-size: 15px;
+    border-radius: 5px;
+    background: transparent;
+}
+
+button:hover {
+    cursor: pointer;
+}

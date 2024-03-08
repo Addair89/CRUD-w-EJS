@@ -1,0 +1,10 @@
+<%- include('../partials/header') %>
+<h2>Add one then...</h2>
+<form action="/dev-skills" method="POST">
+    <label for="skill">Skill</label>
+    <input type="text" name="skill" autocomplete="off">
+    <label for="description">Description</label>
+    <textarea style="width: 300px; height: 150px;" name="description" autocomplete="off"></textarea>
+    <button>Add Skill</button>
+</form>
+<%- include('../partials/footer') %>
